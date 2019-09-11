@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Abril Fatface", cursive;
+  background: linear-gradient(to right, #ffffff, #afafaf);
+  height: 100vh;
+  display: flex; /*flexbuatcenterkedepan*/
+  align-items: center; /*center secara vertical*/
+  justify-content: center;
+  /*center secara horizontal*/
+  /*viewport height sesuai device*/ /*vw:viewport width*/ /*bintang artinya semua elemen*/
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  height: 600px;
+  background: white;
+  box-shadow: 2px 4px 12px 8px rgba(49, 53, 59, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.left {
+  width: 50%;
+  background-image: url(gambar2-new.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right {
+  width: 50%;
+  padding: 32px 48px;
+  overflow: auto;
+}
+
+.left-container {
+  display: flex;
+  /* ada column ada row*/
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 32px 48px;
+  background: linear-gradient(to bottom, transparent, black);
+  align-items: center;
+}
+
+.desc,
+.name,
+.contact-button {
+  color: white;
+  text-align: center;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.desc {
+  font-size: 14px;
+  padding: 8px;
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.job-title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.job-title > span {
+  color: white;
+}
+
+.desc > a {
+  color: white;
+}
+
+.contact-button {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 8px 32px;
+  margin: 16px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.contact-button:hover {
+  background: white;
+  color: #222;
+}
+
+.experience {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #4e4e4e;
+  line-height: 18px;
+  margin-bottom: 24px;
+}
+
+.experience:last-child {
+  margin-bottom: 0;
+}
+
+.experience-workplace > span:first-child {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.experience-workplace > span:last-child {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #049481;
+}
+
+.experience-desc {
+  margin-top: 16px;
+}
+
+.experience-url {
+  color: #049481;
+  display: block;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.experience-location {
+  margin-top: 8px;
+}
+
+.profile-image {
+  display: none;
+}
+
+@media only screen and (max-width: 799px) {
+  body {
+    height: auto;
+    padding: 32px 16px;
+  }
+
+  .container {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left-container {
+    background: rgb(0, 0, 0, 0.5);
+  }
+
+  .left {
+    background-image: url(http://www.sclance.com/backgrounds/simple-texture-background/simple-texture-background_2018673.jpg);
+  }
+
+  .profile-image {
+    display: block;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px;
+    margin-bottom: 16px;
+  }
+}

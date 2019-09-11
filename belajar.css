@@ -1,0 +1,24 @@
+h1 {
+  color: salmon;
+  font-size: 40px;
+}
+
+img {
+  display: block;
+  width: 500px;
+  margin-bottom: 16px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  /*catatan q*/
+  /* cadjasd */
+}
+
+.image1 {
+  width: 300px;
+  background: black;
+}
+
+.image2 {
+  width: 300px;
+  background: black;
+}
